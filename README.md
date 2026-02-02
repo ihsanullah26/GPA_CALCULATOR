@@ -14,15 +14,15 @@ A sleek, web-based GPA and CGPA calculator designed specifically for students, f
 
 ### 1. SGPA Calculator
 Calculate your semester performance by adding individual courses and their respective credit hours.
-![SGPA Screen](sgpa.jpg)
+![SGPA Screen](./sgpa.jpg)
 
 ### 2. CGPA Management
 Combine your semester results to see your total CGPA progress over time.
-![CGPA Screen](cgpa.jpg)
+![CGPA Screen](./cgpa.jpg)
 
 ### 3. Grading Scale & Point Table
 Built-in reference guides for marks-to-grade mapping and grade-point values.
-![Grade Table](grade_table.jpg) ![Point Table](point_table.jpg)
+![Grade Table](./grade_table.jpg) ![Point Table](./point_table.jpg)
 
 ## 🛠️ Tech Stack
 
