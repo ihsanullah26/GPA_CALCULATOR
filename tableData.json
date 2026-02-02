@@ -1,0 +1,16 @@
+{
+  "grading_system": [
+    { "rank": 1, "range": "(90, 100]", "min_score": 90, "max_score": 100, "grade": "A+" },
+    { "rank": 2, "range": "(86, 90]", "min_score": 86, "max_score": 90, "grade": "A" },
+    { "rank": 3, "range": "(82, 86]", "min_score": 82, "max_score": 86, "grade": "A-" },
+    { "rank": 4, "range": "(78, 82]", "min_score": 78, "max_score": 82, "grade": "B+" },
+    { "rank": 5, "range": "(74, 78]", "min_score": 74, "max_score": 78, "grade": "B" },
+    { "rank": 6, "range": "(70, 74]", "min_score": 70, "max_score": 74, "grade": "B-" },
+    { "rank": 7, "range": "(66, 70]", "min_score": 66, "max_score": 70, "grade": "C+" },
+    { "rank": 8, "range": "(62, 66]", "min_score": 62, "max_score": 66, "grade": "C" },
+    { "rank": 9, "range": "(58, 62]", "min_score": 58, "max_score": 62, "grade": "C-" },
+    { "rank": 10, "range": "(54, 58]", "min_score": 54, "max_score": 58, "grade": "D+" },
+    { "rank": 11, "range": "[50, 54]", "min_score": 50, "max_score": 54, "grade": "D" },
+    { "rank": 12, "range": "[0, 50)", "min_score": 0, "max_score": 50, "grade": "F" }
+  ]
+}

@@ -1,0 +1,264 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+/* background blur layer */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("background.png") center / cover no-repeat;
+    filter: blur(8px);
+    transform: scale(1.1); /* avoids blur edges */
+    z-index: -1;
+}
+
+
+.header-side{
+    background-color: rgb(17, 16, 16);
+    border: 5px solid black;
+    box-shadow: 5px 5px 10px 1px rgb(3, 187, 243);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;               
+    width: 99%;
+    height: 200px;
+    
+ }
+
+ .header-side p{
+    color: rgb(10, 194, 235);
+     font-size: 80px; 
+ }
+ 
+ .header-side img{
+    padding-right: 20px;
+ }
+
+.navbar{
+   background-image: linear-gradient(white,rgb(10,194,235));
+   padding: 10px;
+}
+ul{
+   list-style-type: none;
+   display: flex;
+}
+ul li{
+   border-left: 1px solid rgb(1, 1, 1); 
+    box-shadow: 2px 2px 2px rgb(9, 9, 9);
+   border-radius: 5px 15px;
+   background-color: rgb(13, 138, 255);
+   margin-left: 20px;
+
+}
+ul li a{    
+   display: block;
+   padding: 10px 10px;
+   color: rgb(255, 255, 255);
+   text-align: center;
+   text-decoration: none;
+   font-size: x-large;
+}
+ul li a:hover{
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+   border-radius: 5px 15px;
+
+}
+
+
+
+
+/* css for the contents which will be load dynamically*/
+
+.mainArea{
+   margin-top: 30px;
+   display: flex;
+   justify-content: center;
+}
+
+table{
+ margin-top: 10px;
+ width: 500px;
+ box-shadow: 5px 5px 30px 15px rgb(50, 101, 252);
+ border-collapse:collapse;
+}  
+th{
+   background-color: rgb(0, 195, 255);
+   border-radius: 10px;
+   font-weight: 100px;
+    padding: 10px;
+    color:white;
+}
+tr{
+   background-color: rgb(0, 0, 0);
+   box-shadow: 2px 2px 10px rgb(227, 227, 227);
+   width: fit-content;
+   color: aqua;
+}
+ td{
+margin-left: 5px;
+   padding: 5px;
+   font-weight: bolder;
+   text-align: center;
+
+}
+.content4,.content3{
+   background-color: rgb(154, 225, 241);
+   border-radius: 5px;
+   height: fit-content;
+   width: fit-content;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   margin-left: 100px;
+
+}
+
+input{
+   font-size: large;
+   font-weight: bold;
+}
+input::placeholder{
+   font-size: medium;
+   font-weight: normal;
+}
+.form input[type="text"]
+{
+   padding: 10px;
+   margin-top: 5px;
+   background-color: aqua;
+   width: 50%;
+}
+.form input[type="number"]
+{
+   padding: 10px;
+   margin-top: 5px;
+   background-color: aqua;
+   width: 50%;
+}
+#grade{
+   padding: 10px;
+   margin-top: 5px;
+   background-color: aqua;
+   width: 50%;
+   
+}
+
+.form input[type="submit"]
+{
+   padding: 10px;
+   margin-top: 5px;
+   background-color: rgb(3, 129, 255);
+   width: fit-content;
+   border-radius: 10px 5px;
+   color: white;
+   font-size: large;
+
+}
+.form input[type="submit"]:hover{
+   background-color: rgb(229, 229, 229);
+   color: rgb(0, 0, 0);
+   transform: scale(1.02s);
+   cursor: pointer;
+   font-weight: bolder;
+   width: fit-content;
+}
+ #Submitbutton1 , #Submitbutton2{
+   background-color: rgb(0, 136, 233);
+   padding: 10px;
+   color: rgb(255, 255, 255);
+   margin-top: 10px;
+   border-radius: 10px 5px;
+   width: fit-content;
+   font-size: large;
+} 
+#Submitbutton1:hover , #Submitbutton2:hover{
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+   transform: scale(1.02s);
+   cursor: pointer;
+   font-weight: bolder;
+}
+
+button{
+   background-color: aqua;
+   text-align: center;
+   font-size: large;
+   font-weight: bold;
+   border-radius: 10px 5px;
+   padding: 3px;
+}
+
+button:hover{
+   background-color: white;
+   color: black;
+   cursor: pointer;
+}
+.form_input:hover{
+   border: 2px solid aqua;
+}
+/* The parent container */
+.Content1 ,.Content2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;        /* Keeps them aligned at the top */
+    gap: 30px;                      /* Space between form and table */
+    padding: 20px;
+    width: 80%;
+    box-sizing: border-box;   
+}
+
+/* Styling the Form side */
+.Content1 .form,.Content2 .form {
+   flex: 1;                        /* Allows the form to grow/shrink */
+   display: flex;
+   justify-content: flex-start;
+   flex-direction: column; 
+   margin-bottom: 10px;
+   width: 100px;
+}
+
+/* Styling the Table side */
+.CourseTable , .SemesterTable{
+    flex: 2;                        /* Gives the table more space than the form */
+    border-collapse: collapse;
+   
+}
+
+.table2{
+   display: flex;
+   flex-direction: column;
+}
+.Buttons1{
+   display: flex;
+   justify-content: space-between;
+   padding: 5px;
+}
+.Buttons1 p{
+   color: rgb(0, 0, 0);
+   background-image: linear-gradient(rgb(16, 176, 225),white);
+   width: 30%;
+   padding: 10px;
+   border-radius: 5px 15px;
+   text-align: left;
+   font-size: large;
+   height: auto;
+   height: fit-content;
+   font-weight: bolder;
+}
+
+label{
+   color: white;
+   font-size: larger;
+   padding-top:3px;
+   font-weight: bold;
+}
+
+
+

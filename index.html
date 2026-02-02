@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="myscripts.js"></script>
+    <title>GPA CALCULATOR</title>
+</head>
+
+<body>
+    <div class="header-side">
+        <p>GPA CALCULATOR</p>
+        <div id="image"><img src="logo.png" /></div>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li id="content1"><a href="#">Calclate SGPA</a></li>
+            <li id="content2"><a href="#">Calclate CGPA</a></li>
+            <li id="content3"><a href="#">Grade Table</a></li>
+            <li id="content4"><a href="#">Point Table</a></li>
+        </ul>
+    </nav>
+
+    <main class="mainArea">
+        <div class="Content1">
+                <div class="form">
+                    <label for="CourseName">Enter CourseName</label>
+                    <input type="text" class="form_input" id="CourseName" placeholder="Artificial Intelligence">
+                    <label for="crdhrs">Enter Credit Hrs</label>
+                    <input type="number" class="form_input" id="crdhrs" placeholder="3" min="1" max="3"
+                        step="1">
+                    <label for="grade">Grade</label>
+                    <select id="grade" required>
+                        <option value="">Select Grade</option>
+                        <option value="4">A+</option>
+                        <option value="4">A</option>
+                        <option value="3.67">A-</option>
+                        <option value="3.33">B+</option>
+                        <option value="3">B</option>
+                        <option value="2.67">B-</option>
+                        <option value="2.33">C+</option>
+                        <option value="2">C</option>
+                        <option value="1.67">C-</option>
+                        <option value="1.33">D+</option>
+                        <option value="1">D</option>
+                    </select>
+                    <input type="submit" value="Add New Course" id="AddCourseButton">
+                </div>
+                <!-- Making of the table which will grow dynamically-->
+                 <div class="Table2">
+                    <table id="CourseTable">
+                        <thead>
+                            <tr>
+                                <th>CourseName</th>
+                                <th>Credit Hour</th>
+                                <th>Grade</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- data will be inserted-->
+                        </tbody>
+                    </table>
+                    <div class="Buttons1">
+                    <input type="submit" value="Calculate SGPA" id="Submitbutton1">
+                    <p id="SGPAPLACE"></p>
+                    </div>
+                </div>
+            </div>
+       
+            <div class="Content2">
+                <div class="form">
+                    <label for="SemesterName">Enter Semester Name</label>
+                    <input type="text" class="form_input" id="SemesterName" placeholder="Fall 2025">
+                    <label for="sgpa">Enter SGPA</label>
+                    <input type="number" class="form_input" id="sgpa" placeholder="3.45" min="0">
+                    
+                    <input type="submit" value="Add New Semester record" id="AddSemesterButton">
+                </div>
+                <!--Making of the table which will grow dynamically!-->
+                <div class="Table2">
+                <table id="SemesterTable">
+                    <thead>
+                        <tr>
+                            <th>Sr.No</th>
+                            <th>Semester Name</th>
+                            <th>SGPA</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- data will be inserted-->
+                    </tbody>
+                </table>
+                <div class="Buttons1">
+                <input type="submit" value="Calculate CGPA" id="Submitbutton2">
+                <p id="CGPAPLACE"></p>
+                </div>
+                </div>
+            </div>
+    </main>
+
+        
+</body>
+
+</html>
