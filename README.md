@@ -14,7 +14,7 @@ A sleek, web-based GPA and CGPA calculator designed specifically for students, f
 
 ### 1. SGPA Calculator
 Calculate your semester performance by adding individual courses and their respective credit hours.
-![SGPA Screen](./sgpa.jpg)
+![SGPA Screen](sgpa.jpg)
 
 ### 2. CGPA Management
 Combine your semester results to see your total CGPA progress over time.
